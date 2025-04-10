@@ -1,0 +1,253 @@
+$color-text: rgb(0, 0, 0);
+$text-font: Montserrat;
+$price-text: rgb(5, 5, 5);
+
+.header-cart{
+    background: url(img/cart_bg.jpeg),rgb(196, 196, 196);
+}
+
+.cart{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    margin-bottom: 64px;
+    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 580px;
+
+    &__items {
+        display: flex;
+        grid-column: span 8;
+        flex-direction: column;
+
+        &__item{
+            border-top: 0.5px solid rgb(202, 205, 216);
+            padding-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+            padding-bottom: 32px;
+
+            &_left{
+                display: flex;
+                gap: 32px;
+            }
+
+            &_text{
+                display: flex;
+                width: 276px;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            &_title{
+                color: $color-text;
+                font-family: $text-font;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 29px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+
+            &_desc{
+                color: rgb(136, 136, 136);
+                font-family: $text-font;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+
+            &_price{
+                color: $price-text;
+                font-family: $text-font;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0%;
+            }
+
+            &_choose{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+
+                &_1{
+                    color: $color-text;
+                    font-family: $text-font;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 210%;
+                    letter-spacing: 0px;
+                    text-decoration-line: underline;
+                }
+
+                &_2{
+                    color: $color-text;
+                    font-family: $text-font;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 210%;
+                    letter-spacing: 0px;
+                    text-decoration-line: underline;
+                }
+            }
+            
+            &_count{
+                color: $color-text;
+                font-family: $text-font;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 210%;
+                letter-spacing: 0px;
+                text-align: center;
+                width: 71px;
+                height: 51px;
+                border-radius: 6px;
+                border: none;
+                background: rgb(247, 246, 246);
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        color: $color-text;
+        font-family: $text-font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        padding-bottom: 14px;
+    }
+
+    &__buttons{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+
+        &_clear{
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            height: 37px;  
+            margin-top: 18px;
+            color: $color-text;
+            font-family: $text-font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px solid rgb(4, 4, 4);
+            border-radius: 20px;
+            align-items: center;
+            text-decoration-line: none 
+        }
+
+        &_contin{
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            height: 37px;
+            margin-top: 18px;
+            color: $color-text;
+            font-family: $text-font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px solid rgb(4, 4, 4);
+            border-radius: 20px;
+            align-items: center;
+            text-decoration-line: none
+        }
+    }
+}
+
+.cart-offer-buy{
+    border-radius: 20px;
+    background: rgb(247, 246, 246);
+    grid-column: span 4;
+    padding-top: 42px;
+    padding-bottom: 150px;
+    text-align: center;
+
+    &__title{
+        color: $color-text;
+        font-family: $text-font;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0px;
+        padding-bottom: 35px;
+    }
+
+    &__inputs{
+        margin-left: 27px;
+        margin-right: 64px;
+        text-align: left;
+    }
+
+    &__line{
+        border: 1px solid rgb(202, 205, 216);
+        margin-bottom: 42px;
+    }
+
+    &__input{
+        color: $color-text;
+        font-family: $text-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        border: none;
+        background: rgb(247, 246, 246);
+        margin-bottom: 2.5px;
+    }
+
+    &__input::placeholder{
+        color: $color-text;
+    }
+
+    &__bottom_price{
+        margin-bottom: 18px;
+        color: $color-text;
+        font-family: $text-font;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+    }
+
+    &__bottom_btn{
+        display: flex;
+        justify-content: center;
+        width: 290px;
+        height: 41px;
+        margin-top: 18px;
+        margin-right: 45px;
+        margin-left: 45px;
+        color: $color-text;
+        font-family: $text-font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        align-items: center;
+        text-decoration-line: none
+    }
+}
