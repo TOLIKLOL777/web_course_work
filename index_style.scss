@@ -212,12 +212,25 @@ body {
 }
 
 .offer {
+    position: relative;
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
     display: flex;
     height: 400px;
     grid-column: span 4;
     flex-direction: column;
+
+    &__bag{
+        position: absolute;
+        top: 11px;
+        right: 58px;
+    }
+
+    &__like{
+        position: absolute;
+        top: 13px;
+        right: 12px;
+    }
 
     &__title{
         padding-top: 10px;

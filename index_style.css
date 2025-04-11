@@ -196,12 +196,23 @@ body {
 }
 
 .offer {
+  position: relative;
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
   display: flex;
   height: 400px;
   grid-column: span 4;
   flex-direction: column;
+}
+.offer__bag {
+  position: absolute;
+  top: 11px;
+  right: 58px;
+}
+.offer__like {
+  position: absolute;
+  top: 13px;
+  right: 12px;
 }
 .offer__title {
   padding-top: 10px;
@@ -685,6 +696,7 @@ body {
   width: 500px;
   flex-direction: column;
   flex-wrap: wrap;
+  z-index: 1;
 }
 .filter-1__form__fieldset {
   display: flex;
@@ -712,7 +724,8 @@ body {
   border-radius: 20px;
   min-height: 40px;
   font: inherit;
-  padding: 10px 23px;
+  width: 190px;
+  height: 40px;
   cursor: pointer;
   background-color: #fff;
 }
@@ -831,6 +844,7 @@ label {
   flex-direction: row;
   gap: 14px;
   flex-wrap: wrap;
+  margin-right: 18px;
 }
 
 .checkbox {
@@ -945,6 +959,10 @@ label {
 .checkbox__input:checked + .checkbox__label-blue::before,
 .checkbox__input:checked + .checkbox__label-purple::before {
   background-image: url(img/check_2.svg);
+}
+
+.offer-catalog {
+  position: relative;
 }
 
 .show_more {

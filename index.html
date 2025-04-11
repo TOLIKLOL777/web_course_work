@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,16 +12,16 @@
 
 <body>
     <header class="header">
-        <section class="header__nav_bar">
+        <div class="header__nav_bar">
             <a href="index.html"><img src="img/logo_up.svg" alt="Логотип"></a>
-            <input class="header__input" placeholder="Поиск" type="">
+            <input class="header__input" placeholder="Поиск" type="text">
             <nav>
                 <ul class="header__list">
                     <li><a class="header__list_link" href="catalog.html">Каталог</a></li>
                     <li><a class="header__list_link" href="shopping_cart.html">Корзина</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
         <p class="header__line"></p>
         <section>
             <h1 class="header__title">Все, чего заслуживает ваш дом</h1>
@@ -41,9 +41,11 @@
         </div>
     </section>
     <h2 class="section__title">Специальные предложения</h2>
-    <section class="section">
+    <div class="section">
         <article class="offer">
             <img src="img/voda.jpeg" alt="Продукт">
+            <img class="offer__bag" src="img/bag.svg" alt="bag">
+            <img class="offer__like" src="img/like.svg" alt="like">
             <h3 class="offer__title">Люстра VODA</h3>
             <p class="offer__desc">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
             <div class="offer__price">
@@ -69,10 +71,12 @@
                 <p class="offer__price_sale">45 000 руб.</p>
             </div>
         </article>
-    </section>
+    </div>
     <h2 class="section__title">Каталог товаров</h2>
-    <section class="section">
+    <div class="section">
         <article class="offer">
+            <img class="offer__bag" src="img/bag.svg" alt="bag">
+            <img class="offer__like" src="img/like.svg" alt="like">
             <img src="img/tatran.jpeg" alt="Продукт">
             <h3 class="offer__title">Кровать TATRAN</h3>
             <p class="offer__desc">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
@@ -108,7 +112,7 @@
             <p class="offer__desc">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
             <p class="offer__price">80 000 руб.</p>
         </article>
-    </section>
+    </div>
     <a href="catalog.html" class="catalog_link">Перейти в каталог</a>
     <footer class="footer">
         <a href="index.html"><img src="img/logo_down.svg" alt="logo"></a>
@@ -122,7 +126,7 @@
         </nav>
         <div class="footer__contacts">
             <h4 class="footer__contacts_title">Контакты</h4>
-            <a class="footer__contacts_number" href="tel:++7 908 800 80 80">+7 908 800 80 80</a>
+            <a class="footer__contacts_number" href="tel:++79088008080">+7 908 800 80 80</a>
             <a class="footer__contacts_email" href="mailto:help@interier.com">help@interier.com</a>
             <div class="footer__contacts_logos">
                 <a href="#"><img src="img/vk.svg" alt="Вконтакте"></a>
@@ -130,7 +134,7 @@
                 <a href="#"><img src="img/dzen.svg" alt="Дзен"></a>
             </div>
         </div>
-        <form class="footer__form" action="">
+        <form class="footer__form" action="#">
             <p class="footer__form_p">Получайте наши новости и обновления</p>
             <input class="footer__form_input" type="email" placeholder="Ваш email">
             <button class="footer__form_btn">Подписаться</button>
